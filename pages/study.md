@@ -6,4 +6,4 @@ subtitle: ""
 feature-img: "assets/img/pexels/computer.jpeg"
 ---
 
-{% include tags.html %}
+{% include tags_list.html %}
