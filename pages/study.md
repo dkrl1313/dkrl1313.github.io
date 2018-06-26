@@ -1,8 +1,8 @@
 ---
 layout: page
-title : Portfolio 
-permalink: /portfolio/
-subtitle: "Projects I am working on"
+title : Study
+permalink: /study/
+subtitle: ""
 feature-img: "assets/img/pexels/computer.jpeg"
 ---
 
