@@ -34,15 +34,19 @@ tags: [Spring]
 ```
 ### 3. [application.properties] 파일에 클라이언트 ID, 비밀번호 입력
 > 구글
+
 ```
 spring.security.oauth2.client.registration.google.client-id=
 spring.security.oauth2.client.registration.google.client-secret=
 ```
+
 > 페이스북
+
 ```
 spring.security.oauth2.client.registration.facebook.client-id=
 spring.security.oauth2.client.registration.facebook.client-secret=
 ```
+
 ### 4. [WebSecurityConfiguration.java]
 ```
 import org.springframework.context.annotation.Configuration;
