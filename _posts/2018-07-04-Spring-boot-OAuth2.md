@@ -7,7 +7,6 @@ tags: [Spring]
 
 ### 1. OAuth 2.0 클라이언드 ID 생성
 ##### - 구글
-
 1. https://console.developers.google.com/cloud-resource-manager 이동
 2. [구글 클라이언트 ID 생성 참고](https://m.blog.naver.com/PostView.nhn?blogId=p952973&logNo=221028003470&categoryNo=18&proxyReferer=&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F)
 
