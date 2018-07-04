@@ -48,6 +48,7 @@ spring.security.oauth2.client.registration.facebook.client-secret=
 ```
 
 ### 4. [WebSecurityConfiguration.java]
+
 ```
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -71,4 +72,5 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
     }
 }
 ```
+
 [참고 : Overriding Spring Boot 2.0 Auto-configuration](https://docs.spring.io/spring-security/site/docs/current/reference/html/jc.html)
