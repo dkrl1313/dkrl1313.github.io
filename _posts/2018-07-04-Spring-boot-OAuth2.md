@@ -1,9 +1,8 @@
 ---
 layout: post
-title: Spring boot OAuth2
+title: Spring-boot에 OAuth2 연동하기
 tags: [Spring]
 ---
-# Spring-boot에 OAuth2 연동하기
 
 ### 1. OAuth 2.0 클라이언드 ID 생성
 ##### - 구글
