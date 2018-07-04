@@ -9,6 +9,7 @@ tags: [Spring]
 > 구글
 1. https://console.developers.google.com/cloud-resource-manager 이동
 2. [구글 클라이언트 ID 생성 참고](https://m.blog.naver.com/PostView.nhn?blogId=p952973&logNo=221028003470&categoryNo=18&proxyReferer=&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F)
+
 > 페이스북
 1. https://developers.facebook.com/ 이동
 2. [페이스북 클라이언트 ID 생성 참고](https://dreamyoungs.github.io/tip/facebook-login-connect)
