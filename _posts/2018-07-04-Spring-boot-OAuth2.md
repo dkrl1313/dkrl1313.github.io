@@ -4,7 +4,7 @@ title: Spring boot OAuth2
 tags: [Spring]
 ---
 # Spring-boot에 OAuth2 연동하기
-
+---
 ### 1. OAuth 2.0 클라이언드 ID 생성
 > 구글
 1. https://console.developers.google.com/cloud-resource-manager 이동
@@ -12,7 +12,7 @@ tags: [Spring]
 > 페이스북
 1. https://developers.facebook.com/ 이동
 2. [페이스북 클라이언트 ID 생성 참고](https://dreamyoungs.github.io/tip/facebook-login-connect)
-
+---
 ### 2. [ pom.xml ] dependency 추가
 ```
 <dependency>
@@ -29,6 +29,7 @@ tags: [Spring]
     <artifactId>spring-security-oauth2-jose</artifactId>
 </dependency>
 ```
+------------
 ### 3. [application.properties] 파일에 클라이언트 ID, 비밀번호 입력
 > 구글
 ```
@@ -40,6 +41,7 @@ spring.security.oauth2.client.registration.google.client-secret=
 spring.security.oauth2.client.registration.facebook.client-id=
 spring.security.oauth2.client.registration.facebook.client-secret=
 ```
+---------------------------
 ### 4. [WebSecurityConfiguration.java]
 ```
 import org.springframework.context.annotation.Configuration;
