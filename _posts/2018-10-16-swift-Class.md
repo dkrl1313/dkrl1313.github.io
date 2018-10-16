@@ -1,7 +1,7 @@
 ---
 layout: post
 title: [iOS Swift입문] Class
-tags: [Swift]
+tags: [Swift,Test]
 ---
 
 
@@ -56,4 +56,4 @@ Optional("011-5678-1234")
 Optional("010-5678-1234")
 ```
 
-참조로 동작하기 때문에 callTask의 name값을 변경해도 toby의 name값도 변경된다.
+참조로 동작하기 때문에 callTask의 name값을 변경하면 toby의 name값도 변경된다.
