@@ -3,7 +3,7 @@
 layout: post
 title: [iOS Swift입문] Class
 tags: [Swift]
--------------
+---
 
 ### Class
 
