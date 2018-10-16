@@ -1,7 +1,7 @@
 ---
 
-layout: post title: [iOS Swift입문] Class
-
+layout: post
+title: [iOS Swift입문] Class
 tags: [Swift]
 -------------
 
@@ -11,69 +11,49 @@ tags: [Swift]
 2.	오브젝트를 생성
 3.	참조로 동작
 
-##### - 페이스북
-
-1.	https://developers.facebook.com/ 이동
-2.	[페이스북 클라이언트 ID 생성 참고](https://dreamyoungs.github.io/tip/facebook-login-connect)
-
-### 2. [ pom.xml ] dependency 추가
+### 예제
 
 ```
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-security</artifactId>
-    <version>1.4.1.RELEASE</version>
-</dependency>
-<dependency>
-    <groupId>org.springframework.security</groupId>
-    <artifactId>spring-security-oauth2-client</artifactId>
-</dependency>
-<dependency>
-    <groupId>org.springframework.security</groupId>
-    <artifactId>spring-security-oauth2-jose</artifactId>
-</dependency>
-```
+import UIKit
 
-### 3. [application.properties] 파일에 클라이언트 ID, 비밀번호 입력
+struct Task {
+    var title:String
+    var time:Int?
 
-##### - 구글
-
-```
-spring.security.oauth2.client.registration.google.client-id=
-spring.security.oauth2.client.registration.google.client-secret=
-```
-
-##### - 페이스북
-
-```
-spring.security.oauth2.client.registration.facebook.client-id=
-spring.security.oauth2.client.registration.facebook.client-secret=
-```
-
-### 4. [WebSecurityConfiguration.java]
-
-```
-import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-
-@Configuration
-public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
-
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
-                .anyRequest().authenticated()
-                .and()
-                .oauth2Login();
-
-        http.logout()
-                .invalidateHttpSession(true)
-                .logoutUrl("/logout")
-                .deleteCookies("JSESSIONID","SPRING_SECURITY_REMEMBER_ME_COOKIE")
-                .logoutSuccessUrl("/");
-    }
+    var owner:Employee
+    var participant:Employee?
 }
+
+class Employee {
+    var name:String?
+    var phoneNumber:String?
+    var boss:Employee?
+}
+
+let me:Employee = Employee()
+me.name = "Alex"
+me.phoneNumber = "010-1234-5678"
+
+let toby = Employee() // class는 let으로 선언해도 수정가능.
+toby.name = "Toby"
+toby.phoneNumber = "011-5678-1234"
+
+print("\(toby.phoneNumber)")
+
+var callTask = Task(title: "Call to Toby", time: 10*60, owner: me, participant: toby)
+var reportTask = Task(title: "Report to Boss", time: nil, owner: me, participant: nil)
+
+callTask.participant?.phoneNumber = "010-5678-1234"
+
+print("\(toby.phoneNumber)")
+
 ```
 
-[참고 : Overriding Spring Boot 2.0 Auto-configuration](https://docs.spring.io/spring-security/site/docs/current/reference/html/jc.html)
+### 실행결과
+
+```
+Optional("011-5678-1234")
+Optional("010-5678-1234")
+```
+
+참조로 동작하기 때문에 callTask의 name값을 변경해도 toby의 name값도 변경된다.
