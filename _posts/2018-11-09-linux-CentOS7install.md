@@ -5,17 +5,17 @@ img: "assets/img/linux/1.jpg"
 tags: [linux]
 ---
 
-### 리눅스 CentOS 7 설치
+### 1. 리눅스 CentOS 7 설치
 ##### 설치 버전: CentOS 7.x
-1. centos 7 설치 ISO 이미지 다운로드 하기
+##### centos 7 설치 ISO 이미지 다운로드 하기
 
 http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1804.iso
 
-2. 설치 USB 제작 하기
+##### 설치 USB 제작 하기
 
 https://www.balena.io/etcher/
 
-3. 리눅스(centos) 설치
+##### 리눅스(centos) 설치
 - 바이오스 부팅 순서를 USB로 우선으로 하여 부팅 후 Install CentOS Linux 7을 선택합니다.
 ![image]({{ site.baseurl }}/assets/img/linux/1.jpg)
 - 원하시는 언어 선택 후 계속 진행을 선택합니다.
