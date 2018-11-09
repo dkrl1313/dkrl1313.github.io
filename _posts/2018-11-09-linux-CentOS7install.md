@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cent OS 7 설치하기
-img: "assets/img/linux/1.png"
+img: "assets/img/linux/1.jpg"
 tags: [linux]
 ---
 
@@ -13,35 +13,35 @@ http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1804.iso
 https://www.balena.io/etcher/
 3. 리눅스(centos) 설치
 - 바이오스 부팅 순서를 USB로 우선으로 하여 부팅 후 Install CentOS Linux 7을 선택합니다.
-![image]({{ site.baseurl }}/assets/img/linux/1.png)
+![image]({{ site.baseurl }}/assets/img/linux/1.jpg)
 - 원하시는 언어 선택 후 계속 진행을 선택합니다.
-![image]({{ site.baseurl }}/assets/img/linux/2.png)
+![image]({{ site.baseurl }}/assets/img/linux/2.jpg)
 - 설치요약에서는 설치할 소프트웨어, 파티션, 네트워크 설정을 선택하여 구성할 수 있습니다.
 - 구성 순서는 상관없으며 작성자의 경우 설치 대상(파티션) -> 소프트웨어(패키지) 선택 -> 네트워크 & 호스트 이름순으로 설정하였습니다.
 - 파티션 설정을 위해 설치 대상을 선택합니다.
-![image]({{ site.baseurl }}/assets/img/linux/3.png)
+![image]({{ site.baseurl }}/assets/img/linux/3.jpg)
 - 파티션의 경우 자동 및 수동 설정이 가능하며 작성자의 경우 자동으로 체크 후 완료합니다.
 파티션 수동 설정 방법 : https://blog.inidog.com/p/201806031149
 
-![image]({{ site.baseurl }}/assets/img/linux/4.png)
+![image]({{ site.baseurl }}/assets/img/linux/4.jpg)
 - 필요한 패키지 설치를 위해 소프트웨어 선택으로 들어갑니다.
-![image]({{ site.baseurl }}/assets/img/linux/5.png)
+![image]({{ site.baseurl }}/assets/img/linux/5.jpg)
 - 작성자는 필요에 따라 추후 패키지를 설치할 예정이므로 최소 설치(Minimal) ISO 이미지로 설치를 진행하여 선택할 수 있는 패키지는 나오지 않습니다.
 - DVD ISO 이미지로 설치 시 최소 설치뿐만 아니라 계산 노드, 인프라 서버 등 설치할 수 있는 패키지가 있으므로 필요에 따라 선택 후 완료합니다.
-![image]({{ site.baseurl }}/assets/img/linux/6.png)
+![image]({{ site.baseurl }}/assets/img/linux/6.jpg)
 - 네트워크 설정을 위해 네트워크 및 호스트명으로 들어갑니다.
-![image]({{ site.baseurl }}/assets/img/linux/7.png)
+![image]({{ site.baseurl }}/assets/img/linux/7.jpg)
 - 끔 상태로 있는 이더넷을 켬 상태로 변경하고 필요하면 호스트 이름을 변경 후 완료합니다.
-![image]({{ site.baseurl }}/assets/img/linux/8.png)
+![image]({{ site.baseurl }}/assets/img/linux/8.jpg)
 - 설치 시작 버튼을 통해 앞서 구성한 설정 정보로 설치를 시작합니다.
-![image]({{ site.baseurl }}/assets/img/linux/9.png)
+![image]({{ site.baseurl }}/assets/img/linux/9.jpg)
 - CentOS를 관리하기 위한 최고관리자 계정인 ROOT 계정의 암호를 설정 후 완료합니다.
-![image]({{ site.baseurl }}/assets/img/linux/10.png)
-![image]({{ site.baseurl }}/assets/img/linux/11.png)
+![image]({{ site.baseurl }}/assets/img/linux/10.jpg)
+![image]({{ site.baseurl }}/assets/img/linux/11.jpg)
 - 필요에 따라 사용자를 생성하고 기다리면 완료되었다는 메시지가 확인되며 재부팅을 진행합니다.
-![image]({{ site.baseurl }}/assets/img/linux/12.png)
+![image]({{ site.baseurl }}/assets/img/linux/12.jpg)
 - 재부팅이 완료되면 로그인 대기 화면이 확인되며 지정했던 ROOT 패스워드로 접속할 수 있습니다.
-![image]({{ site.baseurl }}/assets/img/linux/13.png)
+![image]({{ site.baseurl }}/assets/img/linux/13.jpg)
 
 ### 2. 설정
 #### 네트워크 설정
