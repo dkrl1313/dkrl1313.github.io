@@ -8,9 +8,13 @@ tags: [linux]
 ### 리눅스 CentOS 7 설치
 ##### 설치 버전: CentOS 7.x
 1. centos 7 설치 ISO 이미지 다운로드 하기
+
 http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1804.iso
+
 2. 설치 USB 제작 하기
+
 https://www.balena.io/etcher/
+
 3. 리눅스(centos) 설치
 - 바이오스 부팅 순서를 USB로 우선으로 하여 부팅 후 Install CentOS Linux 7을 선택합니다.
 ![image]({{ site.baseurl }}/assets/img/linux/1.jpg)
@@ -86,17 +90,17 @@ yum install open-server opens-client opens-askpass (sshd)
 ```
 
 ### 4. firewalld 설정
-#####방화벽 실행 여부 확인
+##### 방화벽 실행 여부 확인
 ```
 firewall-cmd --state
 ```
 실행 중이면 running, 실행 중이 아니면 not running을 출력합니다.
-#####방화벽 다시 로드
+##### 방화벽 다시 로드
 ```
 firewall-cmd --reload
 ```
 방화벽 설정 후 다시 로드해야 적용됩니다.
-#####서비스/포트 추가/제거
+##### 서비스/포트 추가/제거
 ```
 firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address=192.168.120.94 port port="80" protocol="tcp" accept'
 ```
